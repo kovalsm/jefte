@@ -1,11 +1,36 @@
 <ion-header>
-    <ion-navbar>
+
+    <ion-navbar color="whatsapp">
         <ion-title>
-            Register
+            Zoznam osob
         </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only class="add-chat-button">
+                <ion-icon name="person-add"></ion-icon>
+            </button>
+            <button ion-button icon-only class="options-button">
+                <ion-icon name="more"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    Hello!
+<ion-content class="register-page-content">
+    <ion-list class="registers">
+        <ion-item-sliding  *ngFor="let register of registers | async">
+            <button [routerLink]="['/info']" ion-item class="register">
+                <div class="register-info item-register item-remove-animate item-avatar item-icon-right">
+                    <img class="register-picture" [src]="register.picture">
+                    <h2>{{ register.name }} {{register.lastname}}</h2>
+                    <p>{{ register.birth }}</p>
+                    <p>{{register.address}}</p>
+                </div>
+
+            </button>
+
+        </ion-item-sliding>
+
+
+
+    </ion-list>
 </ion-content>

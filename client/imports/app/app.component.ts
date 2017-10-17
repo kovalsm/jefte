@@ -1,15 +1,11 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
-import { RegisterPage } from '../pages/register/register';
-
-import template from './app.html';
 
 @Component({
-    template
+    template: '<router-outlet></router-outlet>'
 })
 export class MyApp {
-    rootPage=RegisterPage;
     constructor(platform: Platform) {
         platform.ready().then(() => {
             // Okay, so the platform is ready and our plugins are available.
