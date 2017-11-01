@@ -1,12 +1,12 @@
-import {NgModule, ErrorHandler} from '@angular/core';
-import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
-import {MyApp} from './app.component';
-import {RegisterPage} from '../pages/register/register';
-import {InfoPage} from '../pages/info/info';
-import {BrowserModule} from '@angular/platform-browser';
-import {RouterModule} from '@angular/router';
-import {routes} from './app.routes';
-import {AccountsModule} from 'angular2-meteor-accounts-ui';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { RegisterPage } from '../pages/register/register';
+import { InfoPage} from '../pages/info/info';
+import { TemperaturePage} from '../pages/actions/temperature/temperature';
+import { BrowserModule} from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { routes } from './app.routes';
 import {LoginPage} from "../pages/login/login";
 
 @NgModule({
@@ -14,6 +14,7 @@ import {LoginPage} from "../pages/login/login";
         MyApp,
         RegisterPage,
         InfoPage,
+        TemperaturePage,
         LoginPage
     ],
     imports: [
@@ -26,7 +27,8 @@ import {LoginPage} from "../pages/login/login";
         MyApp,
         RegisterPage,
         InfoPage,
-        LoginPage
+        LoginPage,
+        TemperaturePage
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler}
