@@ -6,15 +6,16 @@ import {InfoPage} from '../pages/info/info';
 import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule} from '@angular/router';
 import {routes} from './app.routes';
-import {AccountsModule} from 'angular2-meteor-accounts-ui';
 import {LoginPage} from "../pages/login/login";
+import {TemperaturePage} from "../pages/actions/temperature/temperature";
 
 @NgModule({
     declarations: [
         MyApp,
         RegisterPage,
         InfoPage,
-        LoginPage
+        LoginPage,
+        TemperaturePage
     ],
     imports: [
         IonicModule.forRoot(MyApp),
