@@ -23,10 +23,7 @@ import {LoginPage} from "../pages/login/login";
     ],
     bootstrap: [IonicApp],
     entryComponents: [
-        MyApp,
-        RegisterPage,
-        InfoPage,
-        LoginPage
+        MyApp
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler}
