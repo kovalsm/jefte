@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <button [routerLink]="['/info']"   ion-button icon-only menuToggle>
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+
+        <ion-title>Teplota</ion-title>
+
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div  class="item item-text-wrap" >
+        <div class="row header" style="background-color: #00b3ee">
+            <div class="col">Dátum</div>
+            <div class="col">Teplota</div>
+        </div>
+
+        <div class="row"  *ngFor="let data of temperature | async">
+            <div class="col">{{data.createdAt | date: 'dd.MM.yyyy HH:mm'}}</div>
+            <div class="col">{{data.value}}</div>
+        </div>
+    </div>
+</ion-content>

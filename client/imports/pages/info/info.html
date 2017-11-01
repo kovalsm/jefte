@@ -1,13 +1,32 @@
 <ion-header>
     <ion-navbar>
-        <button [routerLink]="['/register']" ion-button icon-only menuToggle>
+        <button  [routerLink]="['/register']" ion-button icon-only menuToggle>
             <ion-icon name="arrow-back"></ion-icon>
         </button>
 
-        <ion-title>Idze to</ion-title>
+        <ion-title>Zoznam úkonov</ion-title>
 
     </ion-navbar>
 </ion-header>
-<ion-content>
-    <h1>Ahoj</h1>
+<ion-content class="cards-bg">
+
+    <ion-card class="cards-list-zoznam">
+        <ion-list>
+            <button [routerLink]="['/temperature']"[queryParams]="{id: this.id}" ion-item>
+                <ion-icon name='thermometer' item-start></ion-icon>
+                Teplota
+            </button>
+
+            <button ion-item>
+                <ion-icon name='pulse' item-start></ion-icon>
+                Tlak
+            </button>
+
+            <button ion-item>
+                <ion-icon name='water' item-start></ion-icon>
+                Pitný režim
+            </button>
+
+        </ion-list>
+    </ion-card>
 </ion-content>
