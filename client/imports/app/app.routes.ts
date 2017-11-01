@@ -5,7 +5,7 @@ import{InfoPage} from '../pages/info/info';
 
 export const routes: Routes = [
     {path: 'register', component: RegisterPage},
-    {path: 'info', component:InfoPage},
+    {path: 'info/:register_id', component:InfoPage},
     {path:'', redirectTo:'/register', pathMatch:'full'}
     ];
 

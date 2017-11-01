@@ -1,6 +1,6 @@
 <ion-header>
 
-    <ion-navbar color="whatsapp">
+    <ion-navbar>
         <ion-title>
             Zoznam osob
         </ion-title>
@@ -18,7 +18,7 @@
 <ion-content class="register-page-content">
     <ion-list class="registers">
         <ion-item-sliding  *ngFor="let register of registers | async">
-            <button [routerLink]="['/info']" ion-item class="register">
+            <button [routerLink]="['/info/' + register._id]" ion-item class="register">
                 <div class="register-info item-register item-remove-animate item-avatar item-icon-right">
                     <img class="register-picture" [src]="register.picture">
                     <h2>{{ register.name }} {{register.lastname}}</h2>
