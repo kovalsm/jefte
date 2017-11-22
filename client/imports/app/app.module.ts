@@ -8,6 +8,7 @@ import {RouterModule} from '@angular/router';
 import {routes} from './app.routes';
 import {LoginPage} from "../pages/login/login";
 import {TemperaturePage} from "../pages/actions/temperature/temperature";
+import {MyModal} from "../pages/actions/temperature/temperature-modal";
 
 @NgModule({
     declarations: [
@@ -15,7 +16,9 @@ import {TemperaturePage} from "../pages/actions/temperature/temperature";
         RegisterPage,
         InfoPage,
         LoginPage,
-        TemperaturePage
+        TemperaturePage,
+        MyModal
+
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -24,7 +27,7 @@ import {TemperaturePage} from "../pages/actions/temperature/temperature";
     ],
     bootstrap: [IonicApp],
     entryComponents: [
-        MyApp
+        MyApp,MyModal
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler}

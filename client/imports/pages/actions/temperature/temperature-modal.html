@@ -1,0 +1,13 @@
+<ion-content padding>
+    <ion-item>
+        Teplota: {{temperature}}
+    </ion-item>
+
+    <ion-item>
+        <ion-input min="33" max="43" type="number" step="0.1"[(ngModel)]="temperature" color="secondary" placeholder="Zadaj teplotu"></ion-input>
+    </ion-item>
+    <ion-buttons end>
+        <button ion-button small icon-end  (click)="close()">Zruš</button>
+        <button ion-button small icon-end  (click)="add()">Pridaj</button>
+    </ion-buttons>
+</ion-content>`

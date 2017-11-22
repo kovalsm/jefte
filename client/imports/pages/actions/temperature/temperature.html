@@ -1,15 +1,19 @@
 <ion-header>
     <ion-navbar>
-        <button [routerLink]="['/info']"   ion-button icon-only menuToggle>
+        <button [routerLink]="['/info']"  [queryParams]="{id: id}" ion-button icon-only menuToggle>
             <ion-icon name="arrow-back"></ion-icon>
         </button>
 
         <ion-title>Teplota</ion-title>
-
+        <ion-buttons end>
+        <button ion-button small icon-end  (click)="openModal()">Pridaj
+            <ion-icon name="star"></ion-icon>
+        </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content>
-    <div  class="item item-text-wrap" >
+    <ion-card>
         <div class="row header" style="background-color: #00b3ee">
             <div class="col">Dátum</div>
             <div class="col">Teplota</div>
@@ -19,5 +23,5 @@
             <div class="col">{{data.createdAt | date: 'dd.MM.yyyy HH:mm'}}</div>
             <div class="col">{{data.value}}</div>
         </div>
-    </div>
+    </ion-card>
 </ion-content>
