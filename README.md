@@ -24,3 +24,6 @@
 3. Set ANDROID_HOME and add the tools directories to your PATH
 4. Optionally: Create an Android Virtual Device to run apps on an emulator
 5. If Gradle cannot be found: try using a package manager such as Homebrew, apt-get, or yum to install a system-wide, standalone version of gradle:
+1. First list item
+   - First nested list item
+     - Second nested list item
