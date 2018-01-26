@@ -9,11 +9,17 @@
   * rozbalime na lubovolne (rozumne) miesto (v mojom pripade `/home/kriza/programing/androidSDK/` )
   * nasledne potrebujeme nainstalovat sdkmanagerom potrebne baliky:
   * dajme tomu ze vyvijame na android 5.1:
+  
   > sdkmanager "platform-tools" "platforms;android-22"
+  
     * vypis vsetkych existujucich balikov na stiahnutie:
+    
   > sdkmanager --list
+  
     * update:
+    
   > sdkmanager --update
+  
     * dalsie prikazy: https://developer.android.com/studio/command-line/sdkmanager.html#update_all_installed_packages
 3. Set ANDROID_HOME and add the tools directories to your PATH
 4. Optionally: Create an Android Virtual Device to run apps on an emulator
