@@ -16,7 +16,7 @@
 
 3. Set ANDROID_HOME and add the tools directories to your PATH
    - upravime subor `.bashrc` tak aby po kazdom spusteni boli nastavene potrebne premenne prostredia nastevene:
-   - otorime si subor `.bashrc` lubovolnym editorom a vlozime nasledujuce riadky s tym ze upravime cestu podla toho kam sme nainstalovali Android SDK:
+   - otorime si subor `.bashrc` lubovolnym editorom `nano ~/.bashrc` a vlozime nasledujuce riadky s tym ze upravime cestu podla toho kam sme nainstalovali Android SDK:
 ```
 # Android
 export ANDROID_HOME=$HOME/programing/androidSDK
