@@ -8,9 +8,11 @@
    - stiahneme Android SDK https://developer.android.com/studio/index.html - uplne dole command line tools
    - rozbalime na lubovolne (rozumne) miesto (v mojom pripade `/home/kriza/programing/androidSDK/` )
    - nasledne potrebujeme nainstalovat sdkmanagerom potrebne baliky:
-   - dajme tomu ze vyvijame na android 5.1: > sdkmanager "platform-tools" "platforms;android-22"
-  
-     - vypis vsetkych existujucich balikov na stiahnutie:
+      - dajme tomu ze vyvijame na android 5.1: 
+```
+sdkmanager "platform-tools" "platforms;android-22"
+```
+      - vypis vsetkych existujucich balikov na stiahnutie:
     
   > sdkmanager --list
   
