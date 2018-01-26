@@ -3,7 +3,7 @@
 ##  Ako vybuildit appku na android?
 
 1. Install a Java Development Kit (JDK) 
-   * predpokladam ze mame
+  * predpokladam ze mame
 2. Install the Android SDK and download the required tools, platforms, and other components (which is done most easily by installing Android Studio)
   * stiahneme Android SDK https://developer.android.com/studio/index.html - uplne dole command line tools
   * rozbalime na lubovolne (rozumne) miesto (v mojom pripade `/home/kriza/programing/androidSDK/` )
