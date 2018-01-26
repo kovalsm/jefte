@@ -12,7 +12,7 @@
       - momentalne meteor vyzaduje API level android-25 - android 7.1: `sdkmanager "platform-tools" "platforms;android-25"`
       - vypis vsetkych existujucich balikov na stiahnutie: `sdkmanager --list`
       - update: `sdkmanager --update`
-      - dalsie prikazy: `https://developer.android.com/studio/command-line/sdkmanager.html`
+      - dalsie prikazy: https://developer.android.com/studio/command-line/sdkmanager.html
 
 3. Set ANDROID_HOME and add the tools directories to your PATH
    - upravime subor `.bashrc` tak aby po kazdom spusteni boli nastavene potrebne premenne prostredia nastevene:
