@@ -9,7 +9,7 @@
    - stiahneme Android SDK https://developer.android.com/studio/index.html - uplne dole command line tools
    - rozbalime na lubovolne (rozumne) miesto (v mojom pripade `/home/kriza/programing/androidSDK/` )
    - nasledne potrebujeme nainstalovat sdkmanagerom potrebne baliky:
-      - momentalne meteor vyzaduje API level android-25 - android 7.1: `sdkmanager "platform-tools" "platforms;android-25"`
+      - momentalne meteor vyzaduje API level android-25 - android 7.1: `sdkmanager "platform-tools" "build-tools;27.0.3" "platforms;android-25"`
       - vypis vsetkych existujucich balikov na stiahnutie: `sdkmanager --list`
       - update: `sdkmanager --update`
       - dalsie prikazy: https://developer.android.com/studio/command-line/sdkmanager.html
@@ -34,3 +34,5 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
    sudo pacman -Syu gradle
    ```
 6. Teraz potrenujeme pridat platformu androidu do Meteror projektu. Najprv skontrolujeme ake platformy mame pridane prikazom `meteor list-platforms`. Ak sa nam zobrazi aj android najprv ho odstranime prikazom `meteor remove-platform  android` a nasledne pridame prikazom `meteor add-platform android`. Ak vsetko prebehne v poriadku mozeme spustit aplikaciu na telefone prikazom `meteor run android-device`.
+
+- pre viac informacii https://guide.meteor.com/mobile.html
