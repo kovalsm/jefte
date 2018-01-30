@@ -17,7 +17,7 @@
                 Teplota
             </button>
 
-            <button ion-item>
+            <button [routerLink]="['/pressure']" [queryParams]="{id: id}"ion-item>
                 <ion-icon name='pulse' item-start></ion-icon>
                 Tlak
             </button>

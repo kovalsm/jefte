@@ -9,6 +9,9 @@ import {routes} from './app.routes';
 import {LoginPage} from "../pages/login/login";
 import {TemperaturePage} from "../pages/actions/temperature/temperature";
 import {MyModal} from "../pages/actions/temperature/temperature-modal";
+import {PressurePage} from "../pages/actions/pressure/pressure";
+import {MyModalPressure} from "../pages/actions/pressure/pressure-modal";
+import {MyModalAddPerson} from "../pages/register/addPerson/addPerson-modal";
 
 @NgModule({
     declarations: [
@@ -17,7 +20,10 @@ import {MyModal} from "../pages/actions/temperature/temperature-modal";
         InfoPage,
         LoginPage,
         TemperaturePage,
-        MyModal
+        PressurePage,
+        MyModalPressure,
+        MyModal,
+        MyModalAddPerson
 
     ],
     imports: [
@@ -27,7 +33,7 @@ import {MyModal} from "../pages/actions/temperature/temperature-modal";
     ],
     bootstrap: [IonicApp],
     entryComponents: [
-        MyApp,MyModal
+        MyApp,MyModal,MyModalPressure,MyModalAddPerson
     ],
     providers: [
         {provide: ErrorHandler, useClass: IonicErrorHandler}

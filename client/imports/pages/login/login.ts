@@ -19,7 +19,7 @@ export class LoginPage {
         this._resetCredentialsFields();
 
         return;
-        let credentials: LoginCredentials = {username: 'patrik', password: 'patrik'};
+        let credentials: LoginCredentials = {username: 'marosi', password: 'marosi'};
         Accounts.createUser(credentials, function (error) {
             if (error) {
                 console.log("Cannot create user");

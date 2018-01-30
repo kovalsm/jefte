@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-title>Pridaj osobu</ion-title>
+</ion-header>
+
+<ion-content padding>
+    <form (ngSubmit)="todo.valid && add()" #todo="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label>Meno</ion-label>
+                <ion-input name="name" type="text" [(ngModel)]="credential.name" required></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Priezvisko</ion-label>
+                <ion-input name="lastName" type="text" [(ngModel)]="credential.lastName" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Dátum narodenia</ion-label>
+                <ion-input name="birth" type="text" [(ngModel)]="credential.birth" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Nástup k pobytu</ion-label>
+                <ion-input name="begin" type="text" [(ngModel)]="credential.beginningOfStay" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Stredisko</ion-label>
+                <ion-input name="centrum" type="text" [(ngModel)]="credential.centrum" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Oddelenie</ion-label>
+                <ion-input name="depart" type="text" [(ngModel)]="credential.department" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Izba</ion-label>
+                <ion-input name="room" type="text" [(ngModel)]="credential.room" required></ion-input>
+            </ion-item>
+        </ion-list>
+
+        <ion-buttons end>
+            <button ion-button small icon-end type="button" (click)="close()">Zruš</button>
+            <button ion-button small icon-end type="submit" [disabled]="!todo.valid">Pridaj</button>
+        </ion-buttons>
+    </form>
+</ion-content>

@@ -1,7 +1,22 @@
-<ion-item>
+<ion-content padding>
+    <ion-item>
+        <ion-label class="pressure">Systolicky tlak: {{systolic}}</ion-label>
 
-    <ion-range min="33" max="43" type="double" snaps="1"[(ngModel)]="temperature" color="secondary">
-        <ion-label range-left>33</ion-label>
-        <ion-label range-right>43</ion-label>
-    </ion-range>
-</ion-item>
+
+        <ion-range min="70" max="200" step="1" pin="true" [(ngModel)]="systolic">
+            <ion-icon small range-left name="heart"></ion-icon>
+            <ion-icon range-right name="heart"></ion-icon>
+        </ion-range>
+    </ion-item>
+    <ion-item>
+        <ion-label>Diastolicky talk: {{diastolic}}</ion-label>
+        <ion-range min="400" max="1300" step="1" [ngModel]="10*diastolic" (ngModelChange)="diastolic=$event/10">
+            <ion-icon small range-left name="sunny"></ion-icon>
+            <ion-icon range-right name="sunny"></ion-icon>
+        </ion-range>
+    </ion-item>
+    <ion-buttons end>
+        <button ion-button small icon-end  (click)="close()">Zruš</button>
+        <button ion-button small icon-end  (click)="add()">Pridaj</button>
+    </ion-buttons>
+</ion-content>`

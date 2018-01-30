@@ -5,11 +5,14 @@
             Zoznam osôb
         </ion-title>
         <ion-buttons end>
-            <button ion-button icon-only class="add-chat-button">
+            <button (click)="addClient()" ion-button icon-only class="add-chat-button">
                 <ion-icon name="person-add"></ion-icon>
             </button>
             <button ion-button icon-only class="options-button">
                 <ion-icon name="more"></ion-icon>
+            </button>
+            <button lock (click)="click()"  ion-button icon-only class="options-button">
+                <ion-icon name="barcode"></ion-icon>
             </button>
         </ion-buttons>
     </ion-navbar>
@@ -32,3 +35,4 @@
     </ion-list>
 
 </ion-content>
+

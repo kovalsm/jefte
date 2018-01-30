@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <button [routerLink]="['/info']"  [queryParams]="{id: id}" ion-button icon-only menuToggle>
+            <ion-icon name="arrow-back"></ion-icon>
+        </button>
+
+        <ion-title>Tlak</ion-title>
+        <ion-buttons end>
+            <button ion-button small icon-end  (click)="openModal()">Pridaj
+                <ion-icon name="star"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <div class="row header" style="background-color: #00b3ee">
+            <div class="col">Dátum</div>
+            <div class="col">Systolický tlak</div>
+            <div class="col">Diastolický tlak</div>
+        </div>
+
+        <div class="row"  *ngFor="let data of pressure | async">
+            <div class="col">{{data.createdAt | date: 'dd.MM.yyyy HH:mm'}}</div>
+            <div class="col">{{data.systolic}}</div>
+            <div class="col">{{data.diastolic}}</div>
+        </div>
+    </ion-card>
+</ion-content>
