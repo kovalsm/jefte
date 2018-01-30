@@ -3,17 +3,17 @@
         <ion-icon small range-left name="thermometer"></ion-icon>
         Teplota: {{temperature}}
     </ion-item>
-
     <ion-item>
-        <ion-range min="330" max="430" type="number" step="1" [ngModel]="10*temperature" (ngModelChange)="temperature=$event/10" color="secondary" placeholder="Zadaj teplotu" required>
-            <ion-icon small range-left name="sunny"></ion-icon>
-            <ion-icon range-right name="sunny"></ion-icon>
+        <ion-range min="330" max="430" type="number" step="1" [ngModel]="10*temperature"
+                   (ngModelChange)="temperature=$event/10" color="secondary" placeholder="Zadaj teplotu">
+            <ion-icon small range-left name="thermometer"></ion-icon>
+            <ion-icon range-right name="thermometer"></ion-icon>
         </ion-range>
-
-
     </ion-item>
+
     <ion-buttons end>
-        <button ion-button small icon-end  (click)="close()">Zruš</button>
-        <button ion-button small icon-end  (click)="add()">Pridaj</button>
+        <button ion-button small icon-end (click)="close()">Zruš</button>
+        <button ion-button small icon-end (click)="add()">Pridaj</button>
     </ion-buttons>
+
 </ion-content>`

@@ -27,12 +27,13 @@ export class RegisterPage implements OnInit {
     }
 
     ngOnInit() {
-        this.registers = Registers.find({}).zone();
+
         this.loggedInUser = Meteor.userId();
         Meteor.subscribe('clients',);
         this.isInRole = function () {
-            return false;
+            return Roles.isInRole;
         }
+        this.registers = Registers.find({}).zone();
         console.log("Prihlasseny uz:" + this.loggedInUser)
     }
 

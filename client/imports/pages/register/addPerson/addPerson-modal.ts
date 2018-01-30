@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ViewController, AlertController} from 'ionic-angular';
 import template from './addPerson-modal.html';
-import { Register } from '../../../../../both/models';
+import {Register} from '../../../../../both/models';
 
 @Component({
     template
@@ -16,7 +16,16 @@ export class MyModalAddPerson {
     }
 
     _resetCredentialsFields() {
-        this.credential = {_id:'',name: '', lastname: '',birth:'',beginningOfStay:'',centrum:'',department:'',room:''};
+        this.credential = {
+            _id: '',
+            name: '',
+            lastname: '',
+            birth: '',
+            beginningOfStay: '',
+            centrum: '',
+            department: '',
+            room: ''
+        };
     }
 
     close() {
@@ -25,21 +34,21 @@ export class MyModalAddPerson {
 
     add() {
 
-            let confirm = this.alertCtrl.create({
-                title: 'Ste si istý?',
-                buttons: [
-                    {
-                        text: 'Áno',
-                        handler: () => {
-                            this.viewCtrl.dismiss(this.credential);
-                        }
-                    },
-                    {
-                        text: 'Nie'
+        let confirm = this.alertCtrl.create({
+            title: 'Ste si istý?',
+            buttons: [
+                {
+                    text: 'Áno',
+                    handler: () => {
+                        this.viewCtrl.dismiss(this.credential);
                     }
-                ]
-            });
-            confirm.present();
-        }
+                },
+                {
+                    text: 'Nie'
+                }
+            ]
+        });
+        confirm.present();
+    }
 
 }

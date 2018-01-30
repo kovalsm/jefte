@@ -5,7 +5,11 @@
         </button>
 
         <ion-title>Zoznam úkonov</ion-title>
-
+        <ion-buttons end>
+            <button lock (click)="findAction()"  ion-button icon-only class="options-button">
+                <ion-icon name="barcode"></ion-icon>
+            </button>
+        </ion-buttons>
     </ion-navbar>
 </ion-header>
 <ion-content class="cards-bg">
@@ -28,5 +32,8 @@
             </button>
 
         </ion-list>
+        <div class="row"  >
+            <div class="col">{{registers}}</div>
+        </div>
     </ion-card>
 </ion-content>

@@ -1,8 +1,6 @@
 <ion-content padding>
     <ion-item>
         <ion-label class="pressure">Systolicky tlak: {{systolic}}</ion-label>
-
-
         <ion-range min="70" max="200" step="1" pin="true" [(ngModel)]="systolic">
             <ion-icon small range-left name="heart"></ion-icon>
             <ion-icon range-right name="heart"></ion-icon>

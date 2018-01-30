@@ -28,14 +28,12 @@ export class TemperaturePage {
     ngOnInit() {
         this.sub = this.route.queryParams.subscribe(params => {
             this.id = params['id'];
+        });
 
-
-        })
         this.temperature = Actions.find({id_client: this.id, action_name: "temperature"}, {
             sort: {createdAt: -1},
             limit: 5
         });
-
     }
 
     openModal() {

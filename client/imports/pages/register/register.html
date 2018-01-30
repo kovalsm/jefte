@@ -11,7 +11,7 @@
             <button ion-button icon-only class="options-button">
                 <ion-icon name="more"></ion-icon>
             </button>
-            <button lock (click)="click()"  ion-button icon-only class="options-button">
+            <button lock (click)="click()" ion-button icon-only class="options-button">
                 <ion-icon name="barcode"></ion-icon>
             </button>
         </ion-buttons>
@@ -20,16 +20,13 @@
 
 <ion-content class="register-page-content">
     <ion-list class="registers">
-        <ion-item [routerLink]="['/info']" [queryParams]="{id: register._id}" ion-item *ngFor="let register of registers | async">
+        <ion-item [routerLink]="['/info']" [queryParams]="{id: register._id}" ion-item
+                  *ngFor="let register of registers | async">
             <ion-avatar item-start><img class="register-picture" [src]="register.picture"></ion-avatar>
-
             <h2>{{register.name }} {{register.lastname}}</h2>
-            <p>{{ register.birth }}</p>
+            <p>{{register.birth }}</p>
             <p>{{register.address}}</p>
-
-
         </ion-item>
-
 
 
     </ion-list>

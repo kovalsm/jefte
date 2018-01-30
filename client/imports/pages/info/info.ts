@@ -3,42 +3,51 @@ import template from './info.html';
 import {ActivatedRoute} from '@angular/router';
 import {Observable} from 'rxjs';
 import {Register} from '../../../../both/models';
+import {BarcodeScanner} from 'ionic-native';
 
-import {Actions} from '../../../../both/collections/actions';
+import {ListOfActions} from '../../../../both/collections/listOfActions';
 import {Registers} from '../../../../both/collections/register'
 
 @Component({
     template
 })
-export class InfoPage implements OnInit{
+export class InfoPage implements OnInit {
 
     private id;
     private sub: any;
 
-    registers: Observable<Register[]>;
-    temperature: Observable<any>;
-    pressure: Observable<any>;
+    private registers: Register;
+    //listOfActions: Observable<any[]>;
 
     constructor(private route: ActivatedRoute) {
-        Meteor.subscribe('clients');
+
     }
 
     ngOnInit() {
+        Meteor.subscribe('clients');
+        Meteor.subscribe('listOfActions');
         this.sub = this.route.queryParams.subscribe(params => {
             this.id = params['id'];
-            this.temperature = Actions.find({id_client: this.id, action_name: "temperature"}, {
-                sort: {createdAt: -1},
-                limit: 5
-            });
             this.registers = Registers.findOne({_id: this.id});
-            this.pressure = Actions.find({id_client: this.id, action_name: "pressure"}, {
-                sort: {createdAt: -1},
-                limit: 5
-            });
-            console.log(this.temperature)
+          //  this.listOfActions = ListOfActions.find({}).zone();
+
         })
 
+    }
 
+    findAction(){
+
+       // this.registers.forEach(function(myData){
+        //    console.log("Akcia:"+myData.name);
+       // });
+
+    }
+
+    doAction(text){
+
+       // this.listOfActions.forEach(function(myData){
+       //     console.log("Akcia:"+);
+       // });
     }
 
 }
