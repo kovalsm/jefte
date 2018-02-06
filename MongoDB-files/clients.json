@@ -1,0 +1,22 @@
+{ 
+    "_id" : "A6XwarSFKwx9G6dAS", 
+    "name" : "maros", 
+    "surname" : "koval", 
+    "birth" : "11.7.1992", 
+    "age" : "22", 
+    "address" : "....", 
+    "family" : "no", 
+    "phone" : "4894645", 
+    "picture" : "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+}
+{ 
+    "_id" : "58592f36d442650b10e9647f", 
+    "name" : "mako", 
+    "surname" : "loka", 
+    "birth" : "17.8.1992", 
+    "age" : "45", 
+    "address" : "....", 
+    "family" : "no", 
+    "phone" : "9435879", 
+    "picture" : "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+}

@@ -1,0 +1,16 @@
+{ 
+    "_id" : ObjectId("58ac33417958c709f188a2ed"), 
+    "id" : "1", 
+    "nazov" : "teplota"
+}
+{ 
+    "_id" : ObjectId("58ac33797958c709f188a2ef"), 
+    "id" : "2", 
+    "nazov" : "tlak"
+}
+{ 
+    "_id" : ObjectId("5a70cb5e7958c70dd1356312"), 
+    "id" : 3.0, 
+    "nazov" : "RAD - ranna hyg starostl. - lozko", 
+    "skratka" : "rhs"
+}
