@@ -2,10 +2,13 @@ image: ubuntu:16.04
 
 before_script:
   - apt-get update
-  - apt-get install curl git -y
+  - apt-get install curl git software-properties-common -y
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
   - apt-get install -y nodejs
   - curl https://install.meteor.com/ | sh
+  - apt-add-repository ppa:cordova-ubuntu/ppa
+  - apt-get update
+  - apt-get install cordova-cli -y
 
 
 publish_live:
