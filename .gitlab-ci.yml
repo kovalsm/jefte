@@ -1,3 +1,4 @@
+image: ulexus/meteor:latest
 publish_live:
   only:
     - master
