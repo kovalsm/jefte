@@ -1,4 +1,9 @@
-image: ulexus/meteor:latest
+image: ubuntu:16.04
+
+before_script:
+  - apt-get install node npm meteor -y
+
+
 publish_live:
   only:
     - master
