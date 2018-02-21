@@ -12,3 +12,4 @@ publish_live:
     - meteor
     - npm
     - node
+    - docker
