@@ -4,7 +4,6 @@ before_script:
   - apt-get update
   - apt-get install curl -y
   - curl https://install.meteor.com/ | sh
-  - apt-get install node npm meteor -y
 
 
 publish_live:
