@@ -10,7 +10,7 @@ publish_live:
   only:
     - master
   script:
-    - meteor build --directory ./ --allow-superuser
+    - meteor build --directory ./ --allow-superuser --server http://158.197.204.103:8000/
     - cd meteor-app/bundle/
     - pushd programs/server/
     - npm install
