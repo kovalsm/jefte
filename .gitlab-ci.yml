@@ -2,7 +2,9 @@ image: ubuntu:16.04
 
 before_script:
   - apt-get update
-  - apt-get install curl nodejs npm -y
+  - apt-get install curl -y
+  - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+  - sudo apt-get install -y nodejs
   - curl https://install.meteor.com/ | sh
 
 
