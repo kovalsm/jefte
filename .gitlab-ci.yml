@@ -10,7 +10,7 @@ publish_live:
   only:
     - master
   script:
-    - meteor build --directory meteor-app
+    - meteor build --directory ./ --allow-superuser
     - cd meteor-app/bundle/
     - pushd programs/server/
     - npm install
