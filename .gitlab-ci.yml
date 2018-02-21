@@ -1,6 +1,7 @@
 image: ubuntu:16.04
 
 before_script:
+  - curl https://install.meteor.com/ | sh
   - apt-get install node npm meteor -y
 
 
