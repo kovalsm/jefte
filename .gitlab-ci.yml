@@ -16,7 +16,7 @@ variables:
   GRADLE_OPTS: "-XX:+UseG1GC -XX:MaxGCPauseMillis=1000"
 
 before_script:
-  - locale-gen $LANG
+  #- locale-gen $LANG
   - apt-get update
   - apt-get install curl git software-properties-common -y
   - curl -sL https://deb.nodesource.com/setup_8.x | bash -
