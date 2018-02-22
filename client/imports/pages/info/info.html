@@ -32,8 +32,9 @@
             </button>
 
         </ion-list>
-        <div class="row"  >
-            <div class="col">{{registers}}</div>
-        </div>
+
     </ion-card>
+    <div class="row" *ngFor="let lists of listOfActions | async">
+        <div class="col">{{lists.nazov}}</div>
+    </div>
 </ion-content>

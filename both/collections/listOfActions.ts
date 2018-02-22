@@ -1,2 +1,3 @@
 import { MongoObservable } from 'meteor-rxjs';
-export const ListOfActions = new MongoObservable.Collection('list_of_actions');
+import { Actions } from '../models';
+export const ListOfActions = new MongoObservable.Collection<Actions>('list_of_actions');

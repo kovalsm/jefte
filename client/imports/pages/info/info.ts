@@ -1,8 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import template from './info.html';
 import {ActivatedRoute} from '@angular/router';
-import {Observable} from 'rxjs';
+import {Observable} from 'rxjs/observable';
 import {Register} from '../../../../both/models';
+import {Actions} from '../../../../both/models';
 import {BarcodeScanner} from 'ionic-native';
 
 import {ListOfActions} from '../../../../both/collections/listOfActions';
@@ -15,9 +16,8 @@ export class InfoPage implements OnInit {
 
     private id;
     private sub: any;
-
-    private registers: Register;
-    //listOfActions: Observable<any[]>;
+    private registers : Register;
+    private listOfActions: Observable<Actions[]>;
 
     constructor(private route: ActivatedRoute) {
 
@@ -28,10 +28,11 @@ export class InfoPage implements OnInit {
         Meteor.subscribe('listOfActions');
         this.sub = this.route.queryParams.subscribe(params => {
             this.id = params['id'];
-            this.registers = Registers.findOne({_id: this.id});
-          //  this.listOfActions = ListOfActions.find({}).zone();
+        });
+        this.registers = Registers.findOne({_id: new Mongo.ObjectID(this.id)});
+        this.listOfActions = ListOfActions.find().zone();
+        this.doAction();
 
-        })
 
     }
 
@@ -43,11 +44,11 @@ export class InfoPage implements OnInit {
 
     }
 
-    doAction(text){
-
-       // this.listOfActions.forEach(function(myData){
-       //     console.log("Akcia:"+);
-       // });
+    doAction(){
+        //this.listOfActions.((p:Actions)=> console.log("Akcia:"+ p.nazov));
+        this.listOfActions.subscribe(todoCount => todoCount.forEach(function (myData) {
+            console.log(myData.nazov);
+        }));
     }
 
 }

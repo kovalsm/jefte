@@ -8,3 +8,9 @@ export interface Register {
     department : string;
     room : string;
 }
+
+export interface Actions{
+    _id : string;
+    id: number;
+    nazov : string;
+}

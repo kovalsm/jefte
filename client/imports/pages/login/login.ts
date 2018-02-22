@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {NgZone, Component} from '@angular/core';
 import template from './login.html';
 import {Accounts} from 'meteor/accounts-base';
 import {Router} from "@angular/router";
@@ -15,7 +15,7 @@ export interface LoginCredentials {
 export class LoginPage {
     credentials: LoginCredentials;
 
-    constructor(private router: Router) {
+    constructor(private zone: NgZone, private router: Router) {
         this._resetCredentialsFields();
 
         return;
@@ -25,7 +25,6 @@ export class LoginPage {
                 console.log("Cannot create user");
             }
         });
-
     }
 
     _resetCredentialsFields() {
@@ -35,6 +34,7 @@ export class LoginPage {
     login(): void {
         let username: string = this.credentials.username;
         let password: string = this.credentials.password;
+        let base = this;
 
         Meteor.loginWithPassword(username, password, (error) => {
             if (error) {
@@ -44,10 +44,9 @@ export class LoginPage {
             else {
                 //this.isDropdownOpen = false;
                 this._resetCredentialsFields();
-                this.router.navigate(["/register"]);
+                this.zone.run(() =>
+                    base.router.navigate(["/register"]));
             }
         });
     }
-
-
 }
