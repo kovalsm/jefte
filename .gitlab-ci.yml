@@ -1,29 +1,96 @@
-# This file is a template, and might need editing before it works on your project.
-# Official docker image.
-image: docker:latest
+image: blurri/meteor-node
+
+variables:
+    METEOR_ALLOW_SUPERUSER: "true"
 
 services:
-  - docker:dind
+  - mongo
+
+cache:
+  paths:
+    - "node_modules"
+    - "~/.npm"
+    - "~/.meteor"
+    - "~/meteor"
+    - ".yarn"
+
+stages:
+  - test
+  - deploy
 
 before_script:
-  - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  - export PATH="$HOME/.yarn/bin:$PATH"
+  # Yarn's install is not cacheable :(
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 0.16.1
+  - yarn config set cache-folder .yarn
+  - yarn install
 
-build-master:
-  tags:
-    - docker
-  stage: build
+# Run Spec Tests
+#
+# We always run spec tests on all branches and commits
+#
+# The linter is automatically called at this point
+# as a sort of pre-flight before the tests
+spec_tests:
+  coverage: /^Statements\s*:\s*([^%]+)/
+  stage: test
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE" .
-    - docker push "$CI_REGISTRY_IMAGE"
+    - yarn run test
+
+# Run Integration Tests
+#
+# Integration tests run before we touch any important
+# branches (develop + master)
+integration_tests:
+  only:
+    - develop
+    - master
+  stage: test
+  script:
+    - yarn run test:integration
+
+# Deploy to Dev Servers
+#
+# No yarn here, only tears
+deploy_dev:
+  only:
+    - develop
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+    - apt-get update
+    - apt-get install build-essential
+    - npm install -g node-gyp
+    - npm install --production
+  script:
+    - cd ./.deploy-dev
+    - ../node_modules/.bin/mup setup
+    - ../node_modules/.bin/mup deploy
+
+# Deploy to Prod Servers
+#
+# No yarn here, only tears
+deploy_dev:
   only:
     - master
+  stage: deploy
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+    - eval $(ssh-agent -s)
+    - ssh-add <(echo "$SSH_PRIVATE_KEY")
+    - mkdir -p ~/.ssh
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 
-build:
-  tags:
-    - docker
-  stage: build
+    - apt-get update
+    - apt-get install build-essential
+    - npm install -g node-gyp
+    - npm install --production
   script:
-    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG" .
-    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
-  except:
-    - master
+    - cd ./.deploy-prod
+    - ../node_modules/.bin/mup setup
+    - ../node_modules/.bin/mup deploy
