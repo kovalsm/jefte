@@ -69,6 +69,7 @@ deploy_dev:
     - apt-get install build-essential
     - npm install -g node-gyp
     - npm install --production
+    - npm install mup
   script:
     - cd ./.deploy-dev
     - ../node_modules/.bin/mup setup
@@ -92,6 +93,7 @@ deploy_dev:
     - apt-get install build-essential
     - npm install -g node-gyp
     - npm install --production
+    - npm install mup
   script:
     - cd ./.deploy-prod
     - ../node_modules/.bin/mup setup
