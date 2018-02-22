@@ -1,7 +1,6 @@
 import {NgZone, Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs/observable';
 import {Roles} from 'meteor/alanning:roles';
-import 'rxjs/add/observable/of';
 import {BarcodeScanner} from 'ionic-native';
 import {ModalController} from 'ionic-angular';
 import {MyModalAddPerson} from './addPerson/addPerson-modal';
@@ -18,7 +17,7 @@ import {Router} from "@angular/router";
 
 export class RegisterPage implements OnInit {
 
-    registers: Observable<Register[]>;
+    private registers: Observable<Register[]>;
     private loggedInUser;
     private isInRole;
 
@@ -27,9 +26,9 @@ export class RegisterPage implements OnInit {
     }
 
     ngOnInit() {
-
+        Meteor.subscribe('clients');
         this.loggedInUser = Meteor.userId();
-        Meteor.subscribe('clients',);
+
         this.isInRole = function () {
             return Roles.isInRole;
         }
