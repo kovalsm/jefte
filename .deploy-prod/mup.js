@@ -1,9 +1,8 @@
 module.exports = {
   servers: {
     memosaDev: {
-        host: '127.0.0.1',
-        username: 'meteor',
-        pem: '~/.ssh/id_rsa'
+        host: '158.197.204.103',
+        username: 'meteor'
     }
   },
   meteor: {
