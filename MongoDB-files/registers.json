@@ -1,0 +1,34 @@
+{ 
+    "_id" : ObjectId("59d938873a34b8cd49f2be1d"), 
+    "name" : "Maros", 
+    "lastname" : "Koval", 
+    "birth" : "11.7.1993", 
+    "picture" : "https://randomuser.me/api/portraits/thumb/men/1.jpg"
+}
+{ 
+    "_id" : ObjectId("59d93fd63a34b8cd49f2be1e"), 
+    "name" : "Maria", 
+    "lastname" : "Fa", 
+    "birth" : "23.11.1995", 
+    "picture" : "https://randomuser.me/api/portraits/thumb/women/6.jpg"
+}
+{ 
+    "_id" : ObjectId("c56b0a7a07183521c862e2ff"), 
+    "name" : "arnold", 
+    "lastname" : "swarz"
+}
+{ 
+    "_id" : ObjectId("c5d0371317ff1a2085ad90c1"), 
+    "name" : "Madam", 
+    "lastname" : "Tuso"
+}
+{ 
+    "_id" : ObjectId("93886412c5969c92d5706560"), 
+    "name" : "Richard", 
+    "lastname" : "Staňa"
+}
+{ 
+    "_id" : "a", 
+    "name" : "s", 
+    "lastname" : null
+}

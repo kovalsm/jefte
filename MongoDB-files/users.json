@@ -1,0 +1,386 @@
+{ 
+    "_id" : "FrbQ73px8iwnk6joM", 
+    "createdAt" : ISODate("2016-10-19T21:32:37.660+0000"), 
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$0yn8D5GrTGsFMKpI1NU3VuaqStissQfzNNFPfptD7bGDS18c3qQVW"
+        }
+    }, 
+    "username" : "test", 
+    "emails" : [
+        {
+            "address" : "test@example.com", 
+            "verified" : false
+        }
+    ]
+}
+{ 
+    "_id" : "A6XwarSFKwx9G6dAS", 
+    "createdAt" : ISODate("2016-10-30T14:23:36.918+0000"), 
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$4U.0Xs5EU3kkBDw1cKcLlOx/VRpwoAYBpV2SmqtFvbGCNvQrcr6oe"
+        }, 
+        "resume" : {
+            "loginTokens" : [
+                {
+                    "when" : ISODate("2018-01-23T08:31:45.333+0000"), 
+                    "hashedToken" : "Ys5Zg9/CUATdzsLCBmZaEgfOT+JpeW6/PAC71Mi7u2g="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T11:37:50.042+0000"), 
+                    "hashedToken" : "2t08lMyMMCfvtrESIglJUK2AZEjDQ6CeocLur4d6Y44="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T17:19:11.001+0000"), 
+                    "hashedToken" : "dr1YvW7tGmoQtBzHj9KYbmNux/Pmtn3wp5FDDwMRqqg="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:04:52.354+0000"), 
+                    "hashedToken" : "Y2CpAytdOA6zbySXG13neY0rfJ9xq01sdTRCGllRtw4="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:10:56.904+0000"), 
+                    "hashedToken" : "bVo911twS7Nu8PNOSf44ENBKD4desTKbMn4foFzSpqw="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:13:15.942+0000"), 
+                    "hashedToken" : "Cno/lP9ngoeq5ya4XqbUFbXpfEVCGxlzxQRuw+lUVv8="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:16:32.666+0000"), 
+                    "hashedToken" : "hsejVUFn/I6OZnzTxrCarCUOetAPpSaF6r/dVUxfmg4="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:22:07.283+0000"), 
+                    "hashedToken" : "LIZIVa4WETIfGhhMN0DzC5FazAERup83LihAvKusXjw="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:36:41.444+0000"), 
+                    "hashedToken" : "rL4O2/FCtNTmBVre7oPKKH4aYdEyHyQrcKFLtCcZL6Q="
+                }
+            ]
+        }
+    }, 
+    "username" : "marosi", 
+    "emails" : [
+        {
+            "address" : "marosi", 
+            "verified" : false
+        }
+    ], 
+    "profile" : {
+        "createdOn" : ISODate("2016-10-30T14:23:36.721+0000")
+    }, 
+    "roles" : "client"
+}
+{ 
+    "_id" : "8rqv3CiBTqi2TbWt4", 
+    "createdAt" : ISODate("2016-11-15T22:38:08.177+0000"), 
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$sWwMsIyIymZWrNDPDrr0I.mm6A2g7EZyrugdbPdbzueGnIN3QZm/q"
+        }, 
+        "resume" : {
+            "loginTokens" : [
+                {
+                    "when" : ISODate("2017-11-19T14:14:45.558+0000"), 
+                    "hashedToken" : "vz6MQbRzYkPj1L+zhI0xvpEmO0W9FT5Q2XWubYwr8Ks="
+                }, 
+                {
+                    "when" : ISODate("2017-11-19T17:40:54.662+0000"), 
+                    "hashedToken" : "dIOlE0Nhhro/FnbwILRzjKxIyj8dD+SpzkanXbUvUY4="
+                }, 
+                {
+                    "when" : ISODate("2017-11-19T17:49:46.719+0000"), 
+                    "hashedToken" : "n+2JqgVhw3n0mEmZs+7XlPu5X0vYdAb8K9NN8OpEREk="
+                }, 
+                {
+                    "when" : ISODate("2017-11-21T22:26:12.964+0000"), 
+                    "hashedToken" : "7a/fxfvtUk4yXKSkfNdcSjU9C1KjdUzuSNOW9APcTzA="
+                }, 
+                {
+                    "when" : ISODate("2017-12-01T10:42:58.882+0000"), 
+                    "hashedToken" : "ubbP2Tk0yejJSa+4gKERLLIm77Cfzai0h0Q+sOfBXkk="
+                }, 
+                {
+                    "when" : ISODate("2017-12-01T13:53:55.419+0000"), 
+                    "hashedToken" : "SHRJAW0nILAczQvYTVROw9WxIpxFD9kZSsrMgpwMt0g="
+                }, 
+                {
+                    "when" : ISODate("2018-01-21T12:48:00.941+0000"), 
+                    "hashedToken" : "lJipYXgAmEeAEhBwJSuWxTYDwZzp3bLOwzJ6HwUmc1A="
+                }, 
+                {
+                    "when" : ISODate("2018-01-21T13:51:15.002+0000"), 
+                    "hashedToken" : "4DCc0qcmvZQCIuHK5PGB3I8xMxcyCg1W8NYiloqxZlY="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T08:12:52.097+0000"), 
+                    "hashedToken" : "OuzYgKNEKNgIhob7M23e/fKOSDDy4qnp+s02+4fJ/24="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T08:22:35.635+0000"), 
+                    "hashedToken" : "mASqiK4l4jrBcyZwPO2hsRuX09QMx8Qn9bEAOU6ZnGY="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T08:34:20.121+0000"), 
+                    "hashedToken" : "6ufow1Hc1SIH33ZxqPTsIhos3XhLKqcyRyUb2Y3/IJk="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T08:51:19.959+0000"), 
+                    "hashedToken" : "SpDpzNoEAQbdL+2EIWPH/UB/gZnlynGqiZHqpAH3V/E="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T09:49:18.918+0000"), 
+                    "hashedToken" : "icHA0bo3q81rkwLQO1po54zbOdwxlxVFrq1QBMhPyNw="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T09:53:39.535+0000"), 
+                    "hashedToken" : "WbCqtl5kvkUYX58JGrmPOXyFaI00DZbTbr6dfdfcygE="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T10:04:50.184+0000"), 
+                    "hashedToken" : "omuT1aeHjLsHrmWK4aS7udJAiK+6bl+/E9wv7xnk2sI="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T11:38:06.524+0000"), 
+                    "hashedToken" : "rAnTL316eKVP8XJxo229VLnqMnO20lQ74IKsZfp9Ldc="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T11:52:34.190+0000"), 
+                    "hashedToken" : "ljsAc++Rr3JnAJxW3Axiz63ZF2B4AnZc7fejADAAP/s="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:49:29.000+0000"), 
+                    "hashedToken" : "ONePBzywGJr9vnrkeEuoevQ5u2IrGVbkbBY+Wobls9c="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:49:56.986+0000"), 
+                    "hashedToken" : "ExfkBRwj92w58C2HiQ1eHZRDvSw6TG4QMX8VI+L4QXE="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:50:13.184+0000"), 
+                    "hashedToken" : "o9ztTVpUtrvEmcZBPMEVKDaWY0fODlbgOjSVnBC1Dow="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:50:59.389+0000"), 
+                    "hashedToken" : "JW/zAkbktVkGLVLfAH56qFA9fAMQapOmveZdjVeLp7M="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:51:08.396+0000"), 
+                    "hashedToken" : "GZ6ZoGG8ZnoFbVMvw6nomqDMf/KkRYY3JApph0cVLpA="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T17:51:23.509+0000"), 
+                    "hashedToken" : "RUlHzuwpK+JsEk15gfWAH3wstO3ZPLaT7MHNfhuZyuE="
+                }, 
+                {
+                    "when" : ISODate("2018-01-23T18:05:23.859+0000"), 
+                    "hashedToken" : "fnmXZnwrzhi3gsotAoqEYDK2SiX/fNIVtbfhYM2JQkc="
+                }, 
+                {
+                    "when" : ISODate("2018-01-24T18:14:16.349+0000"), 
+                    "hashedToken" : "31F0SbZ2iQvfPDvItFBZoR2hTEz4UOMwXRyFYDbxDE4="
+                }, 
+                {
+                    "when" : ISODate("2018-01-24T18:14:45.457+0000"), 
+                    "hashedToken" : "hWYCZMWtfeDzIPujtizvehtEiCD/1Yk47d4ttm2Bd3Q="
+                }, 
+                {
+                    "when" : ISODate("2018-01-27T20:47:26.368+0000"), 
+                    "hashedToken" : "XIDZKzE6HMpPkswtsSkelpW4paXf1OSZUpBN5nAsobk="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T16:38:38.281+0000"), 
+                    "hashedToken" : "mJi3woK+c5HTJNVcYvldbfTEkZqlg+Lk5nUJPlcSiGs="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T16:53:39.834+0000"), 
+                    "hashedToken" : "APE/UYIY1gfAcgXTXxvG3kJ76kur6kjn8FRYbKXgyQc="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T16:54:21.126+0000"), 
+                    "hashedToken" : "Wlkh2p5ihqy2TxFmI3S2aUZeHoDIQnlxokXtxL5wQi8="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T17:04:29.567+0000"), 
+                    "hashedToken" : "1yqr3EU8p6MpoFCD9/e5aYA/yt4JrpZZtJh7eKGjR3A="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T17:09:15.845+0000"), 
+                    "hashedToken" : "QNqUMKVtYqxM3WWp61vflwdrAjknFB5w8iu29QAuImw="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T17:25:06.645+0000"), 
+                    "hashedToken" : "JJkMrtynA5nuMxmEv0OsqDSuHOqMa5Y9M1/K3NaeFeY="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T17:37:09.868+0000"), 
+                    "hashedToken" : "W2zcB+r/Ad6degSD4qB3iLSe2ehagv8a+jRMHCMIfig="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T18:38:48.826+0000"), 
+                    "hashedToken" : "sVCjLYtV9W+ytrC6AYAWKOjnUQQqBmLG8kPhrqzjECQ="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T19:16:52.991+0000"), 
+                    "hashedToken" : "9LboxeoKMTPokz5LjQEz1GCoKmfwWW4GTcDyWunD7As="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T19:26:39.958+0000"), 
+                    "hashedToken" : "4sr7kHmMimmPomXUx6o/q1Zz8ejNZT02kdoBD4D9zbQ="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T20:34:30.140+0000"), 
+                    "hashedToken" : "S2eiwNLk63ekp20F5tN/IUNWbF1QjkK/1MhSDG9Q8Pc="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:00:38.301+0000"), 
+                    "hashedToken" : "2VviOD0GW7Gv1H7g1eIgL5KVB2O08W2ivauKxDPh9o8="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:04:38.596+0000"), 
+                    "hashedToken" : "j4Q/Y/yXCYAU+zP0kFjhnuM6rX6TzPLyMlV7Ej4X/aw="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:21:46.693+0000"), 
+                    "hashedToken" : "zvtGYw9/1LkhkNcDTIkn6fKqp3JJR51Ss6k/AMgg7lk="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:36:24.354+0000"), 
+                    "hashedToken" : "f854SAS9lk4yZYAmWCt67VKPLrt35aoaZk9ZRoYizMY="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:39:51.001+0000"), 
+                    "hashedToken" : "uFbGY9cf0z41dGgXdkbHzlNd0vzGQqnwEjtpHc6vMRg="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:39:51.213+0000"), 
+                    "hashedToken" : "hTVFNA2Ttk+J8WXKOSawt4Mxp81u9fssVq1MiHgSClg="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:39:51.361+0000"), 
+                    "hashedToken" : "4pwKaruKrcngRR7IvnJwG83MdwR0tzMcHhKb9aIiT28="
+                }, 
+                {
+                    "when" : ISODate("2018-01-30T21:39:51.507+0000"), 
+                    "hashedToken" : "KSEhsBMlrukvFN0rll3ZPakVETkByQ027LTytSYDBJE="
+                }, 
+                {
+                    "when" : ISODate("2018-02-05T14:22:20.769+0000"), 
+                    "hashedToken" : "nZKA0qHJPrYbNDKFQct9lbM8LaEUnC9ryNIXFaGgasI="
+                }, 
+                {
+                    "when" : ISODate("2018-02-05T15:45:06.099+0000"), 
+                    "hashedToken" : "iibSOEky7MjdPR/+M8jF2VfHVwgSn6iaUrzI8VgYXpM="
+                }, 
+                {
+                    "when" : ISODate("2018-02-05T16:47:53.285+0000"), 
+                    "hashedToken" : "X2S0aa/ZHJrPPHY70Z3HOm4llVV0E81SoCvEzQOBuig="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T17:40:17.260+0000"), 
+                    "hashedToken" : "09wAaFE8Rd2alLdISN3f3lAwYBE9+T68sdomYdvLzj0="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:06:44.952+0000"), 
+                    "hashedToken" : "BMtElDtOOzosYcwx2MMosvybsKH0u6xYy4TlatGeK+g="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:07:49.333+0000"), 
+                    "hashedToken" : "dRh6LKF8uD2oUk7NSwwchrJP3iZWRKtC/VJZLCawemw="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:09:30.494+0000"), 
+                    "hashedToken" : "GpLcDzs5K31sug32LjhaoYKr6kTY7NGMyV3w5xlr+YY="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:09:47.015+0000"), 
+                    "hashedToken" : "t7nTTBYRjySSosQLCwsPhz93ZyZAYGpAq4oBYhu0XJo="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:14:03.277+0000"), 
+                    "hashedToken" : "h4ljwBCb3FtJ6LweWBqwrl81SJ5+JRxtDlZjO+JHpqk="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:14:14.334+0000"), 
+                    "hashedToken" : "UF1CPBpPdmt1H0tUSCq7k6OECd931bkS23fK3J7MuMg="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:15:30.825+0000"), 
+                    "hashedToken" : "4J8OITx58BKaTD12m+Z1l/OUPk1/BzPWoFS1db/DESI="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:15:58.041+0000"), 
+                    "hashedToken" : "v6WWP2BteTYRipluBVGI19DuGt7gx0u367TV/WG7G0I="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:18:10.355+0000"), 
+                    "hashedToken" : "0Nx0JXKurWG1wftvPVoT9Fft/3ib6KiswJh/gByXHuM="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:18:29.109+0000"), 
+                    "hashedToken" : "eO0ZtlAIqpjZj3a+b7fs3W6wedft+WKNmx7NCo3iIek="
+                }, 
+                {
+                    "when" : ISODate("2018-02-06T18:19:55.730+0000"), 
+                    "hashedToken" : "CbZtJGYkMx2BJAD7g1KtYuuBs9E1O2vo2bjL4Z3sPh0="
+                }
+            ]
+        }
+    }, 
+    "username" : "riso", 
+    "emails" : [
+        {
+            "address" : "riso", 
+            "verified" : false
+        }
+    ], 
+    "profile" : {
+        "createdOn" : ISODate("2016-11-15T22:38:08.076+0000")
+    }, 
+    "roles" : "staff"
+}
+{ 
+    "_id" : "8KxRWp6asvvrG29BF", 
+    "createdAt" : ISODate("2016-12-20T21:12:43.234+0000"), 
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$uhUyzg34uIYsyBESBPENtevGG4c/WvLmAMrUyQoktN6qCldT4RawG"
+        }, 
+        "resume" : {
+            "loginTokens" : [
+
+            ]
+        }
+    }, 
+    "username" : "miro", 
+    "emails" : [
+        {
+            "address" : "miro", 
+            "verified" : false
+        }
+    ], 
+    "profile" : {
+        "createdOn" : ISODate("2016-12-20T21:12:43.099+0000")
+    }
+}
+{ 
+    "_id" : "kKuHfEnyfB4fEBkaJ", 
+    "createdAt" : ISODate("2018-01-30T17:35:48.629+0000"), 
+    "services" : {
+        "password" : {
+            "bcrypt" : "$2a$10$6FMDSOmwcWlScM34zerlHeMSnx/5bWn.7EPoXsGW9u.uRwyvQQnD6"
+        }, 
+        "resume" : {
+            "loginTokens" : [
+                {
+                    "when" : ISODate("2018-01-30T17:35:48.634+0000"), 
+                    "hashedToken" : "6lIJ08tAaP9y/IJ36/ijVGw9HOXMDQl4JJtd4LAF34Q="
+                }
+            ]
+        }
+    }, 
+    "username" : "maros"
+}

@@ -1,0 +1,11 @@
+{ 
+    "_id" : "8rqv3CiBTqi2TbWt4", 
+    "name" : "maros", 
+    "surname" : "koval", 
+    "birth" : "11.7.1992", 
+    "age" : "22", 
+    "address" : "....", 
+    "family" : "yes/no", 
+    "phone" : "4894654", 
+    "postion" : " doktor"
+}
